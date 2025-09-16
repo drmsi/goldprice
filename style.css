@@ -5,10 +5,17 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  margin-top: 100px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subtitle {
@@ -16,36 +23,8 @@ body {
   margin-bottom: 20px;
 }
 
-.price-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 15px;
-  display: inline-block;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-#goldPrice {
-  font-size: 36px;
-  margin: 0;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  background: gold;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #ffd700;
-}
-
-.last-update {
-  margin-top: 15px;
-  font-size: 14px;
-  opacity: 0.8;
+.tradingview-widget-container {
+  width: 90%;
+  height: 600px;
+  max-width: 1200px;
 }
